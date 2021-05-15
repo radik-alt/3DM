@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба №3</title>
+</head>
+<body>
+
+    <div>
+        <p style="text-align: center; font-size: 36px; font-weight: 500;">Лабораторная работа №3</p>
+        <p>
+            1 0 0 0 <br>
+            0 1 0 0 <br>
+            0 0 1 0 <br>
+            0 0 0 1 
+        </p>
+
+        <div style="display: flex;">
+            <textarea style="width: 200px; height: 200px;" id="Matrix" placeholder="Матрица"></textarea>
+            <!-- <textarea placeholder="Пары" style="margin-left: 20px;"></textarea> -->
+        </div>
+        <br>
+        <button class="but" type="button" value="Выполнить" onClick="get()">Click</button>
+
+        <div>
+            <p id="result">Отношение: </p>
+        </div>
+    </div>
+    
+    
+
+    <script>
+
+        function get(){
+
+            var matrix = document.getElementById('Matrix').value.split("\n");
+            var two = new Array();
+
+            for(var i = 0; i < matrix.length; i++){
+                for(var j = 0; j< matrix.length; j++){
+                    two[j] = matrix[j].split(" ");
+                }
+            }
+
+            var mas = 0;
+
+            for(var i = 0; i < two[0].length; i++){
+                for(var j = 0; j < two[i].length; j++){
+                    if(two[i][j] == 1  || two[i][j] == 0){
+                        if(two[i][j] == 1){
+                            mas += 1;
+                            if(mas == two.length){
+                                innnee = "+";
+                                if(two[i] == "0 0 0 0"){
+                                    mas+=1;
+                                }
+                                opa();
+                            } else if(mas != two.length){
+                                innnee = "-";
+                            }
+                        }
+                    }
+                }
+            }
+
+            function opa(){ console.log(two.length);
+                var count = 0;
+                for(var i = 0; i < two[0].length; i++){
+                    for(var j = 0; j < two[i].length; j++){
+                        if(two[i][j] > 1){
+                            innnee = "-";
+                            console.log(two[i][j])
+                            count++;
+                        } else if (two[i][j] == 1  || two[i][j] == 0){
+                            if(count == 0){
+                                innnee = "+";
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        
+            
+
+            var res = document.getElementById('result').innerHTML = "Функция: " + innnee;
+
+        }
+
+    </script>
+
+
+</body>
+</html>
