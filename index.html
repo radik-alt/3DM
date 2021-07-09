@@ -1,97 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <title>Портфолио Абдулхакова Радик</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+        <meta charset="UTF-8">
+    <meta name="description" content="Hazze Template">
+    <meta name="keywords" content="Hazze, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лаба №3</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 
-    <div>
-        <p style="text-align: center; font-size: 36px; font-weight: 500;">Лабораторная работа №3</p>
-        <p>
-            1 0 0 0 <br>
-            0 1 0 0 <br>
-            0 0 1 0 <br>
-            0 0 0 1 
-        </p>
-
-        <div style="display: flex;">
-            <textarea style="width: 200px; height: 200px;" id="Matrix" placeholder="Матрица"></textarea>
-            <!-- <textarea placeholder="Пары" style="margin-left: 20px;"></textarea> -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo ">
+                        <a href="#" style="color: gray; font-size: 18px; ">
+                            Radik
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="main-menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Портфолио</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="mobile-menu-wrap"></div> -->
         </div>
-        <br>
-        <button class="but" type="button" value="Выполнить" onClick="get()">Click</button>
+    </header>
+    <!-- Header End -->
 
-        <div>
-            <p id="result">Отношение: </p>
+    <!-- Hero Section Begin -->
+    <section class="set-bg" data-setbg="img/hero-bg.jpeg">
+        <div class="container">
+            <div class="text-center hs-text heads">
+              <h2>Портфолио</h2>
+              <p>Desription</p>
+            </div>
         </div>
-    </div>
-    
-    
-
-    <script>
-
-        function get(){
-
-            var matrix = document.getElementById('Matrix').value.split("\n");
-            var two = new Array();
-
-            for(var i = 0; i < matrix.length; i++){
-                for(var j = 0; j< matrix.length; j++){
-                    two[j] = matrix[j].split(" ");
-                }
-            }
-
-            var mas = 0;
-
-            for(var i = 0; i < two[0].length; i++){
-                for(var j = 0; j < two[i].length; j++){
-                    if(two[i][j] == 1  || two[i][j] == 0){
-                        if(two[i][j] == 1){
-                            mas += 1;
-                            if(mas == two.length){
-                                innnee = "+";
-                                if(two[i] == "0 0 0 0"){
-                                    mas+=1;
-                                }
-                                opa();
-                            } else if(mas != two.length){
-                                innnee = "-";
-                            }
-                        }
-                    }
-                }
-            }
-
-            function opa(){ console.log(two.length);
-                var count = 0;
-                for(var i = 0; i < two[0].length; i++){
-                    for(var j = 0; j < two[i].length; j++){
-                        if(two[i][j] > 1){
-                            innnee = "-";
-                            console.log(two[i][j])
-                            count++;
-                        } else if (two[i][j] == 1  || two[i][j] == 0){
-                            if(count == 0){
-                                innnee = "+";
-                            }
-                        }
-                    }
-                }
-            }
+    </section>
 
 
-        
-            
+    <section class="about-us-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="as-pic">
+                        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="img/prof/austraction1.png" class="d-block w-100 img_carousel" style="height: 420px;" alt="1...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/prof/acp_game2.png" class="d-block w-100 img_carousel" style="height: 420px;"  alt="2...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/prof/brand_tec1.png" class="d-block w-100 img_carousel" style="height: 420px;" alt="3...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="as-text">
+                        <div class="section-title">
+                            <span>Наши работы</span>
+                            <h2>Главные работы</h2>
+                        </div>
+                        <p class="f-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p class="s-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="primary-btn">Next...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            var res = document.getElementById('result').innerHTML = "Функция: " + innnee;
+<!-- Services Section Begin -->
+    <section class="services-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Наш сервис</span>
+                        <h2>Лучший сервис в мире</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <img src="img/services/service-1.png" alt="">
+                        <h4>Design</h4>
+                        <p>Cайт принимает современный вид с различными улучшенными заранее определенными элементами страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <img src="img/services/service-2.png" alt="">
+                        <h4>Content</h4>
+                        <p>Cайт принимает современный вид с различными улучшенными заранее определенными элементами страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <img src="img/services/service-3.png" alt="">
+                        <h4>Качество разработки</h4>
+                        <p>Cайт принимает современный вид с различными улучшенными заранее определенными элементами страницы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        }
+    <section class="about-us-section spad">
+      <div class="container">
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="hs-text">
+                        <span>Сайт</span>
+                        <h2>Seasons</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="..." class="d-block w-100" alt="..1.">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="..2.">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="..3.">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                        </div>
+                    </div>
+                    <a href="#" class="primary-btn">Next...</a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="hs-text">
+                        <span>Сайт</span>
+                        <h2>Adme</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                           <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"></span>
+                            </button>
+                          </div>
+                        <a href="#" class="primary-btn">Next...</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
 
-    </script>
+
+<section class="about-us-section spad">
+      <div class="container">
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="hs-text">
+                        <span>Сайт</span>
+                        <h2>Seasons</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="..." class="w-100" class="img_carousel" alt="..1.">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="..2.">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="..3.">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                        </div>
+                    </div>
+                    <a href="#" class="primary-btn">Next...</a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="hs-text">
+                        <span>Сайт</span>
+                        <h2>ПравИло</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                           <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"></span>
+                            </button>
+                          </div>
+                        <a href="#" class="primary-btn">Next...</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
 
 
+    <section class="about-us-section spad">
+      <div class="container">
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="hs-text">
+                        <span>Сайт</span>
+                        <h2>Autstraction</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="..." class="d-block w-100" alt="..1.">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="..2.">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="..3.">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                          </button>
+                        </div>
+                    </div>
+                    <a href="#" class="primary-btn">Next...</a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="hs-text">
+                        <span>Сайт</span>
+                        <h2>BRAND*TEC</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                           <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden"></span>
+                            </button>
+                          </div>
+                        <a href="#" class="primary-btn">Next...</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+
+    <section class="footer-section" style="border-top: 1px solid white;">
+      <div class="container">
+        <div class="logo ">
+              <a href="#" style="color: gray; font-size: 18px; ">
+                  Radik
+              </a>
+          </div>
+      </div>
+    </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
