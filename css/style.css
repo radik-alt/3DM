@@ -148,7 +148,7 @@ ol {
 
 
 .set-bg1 {
-	background-image: url(../img/prof/nol_one.jpg);
+	/*background-image: url(../img/prof/nol_one.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
