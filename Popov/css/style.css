@@ -84,6 +84,14 @@ body{
 	margin-right: 4px;
 }
 
+
+	.pla_mess2{
+		display:flex; 
+		align-items: center; 
+		padding: 15px;
+	}
+
+
 .tabs_div{
 	display: flex;
 	justify-content: center;
@@ -311,8 +319,9 @@ body{
 
 .inp_message{
 	background: #FFFFFF;
+	border: none;
 	border-top: 1px solid #C2C2C2;
-	border-right: 1px solid #C2C2C2;
+	/*border-right: 1px solid #C2C2C2;*/
 	border-radius: 0px 0px 5px 0px;
 	width: 100%;
 	height: 60px;
@@ -343,8 +352,6 @@ body{
 	border: none;
 	background: #FFFFFF;
 	border-top: 1px solid #C2C2C2;
-	border-right: 1px solid #C2C2C2;
-	border-bottom: 1px solid #C2C2C2;
 	box-sizing: border-box;
 	border-radius: 0px 0px 5px 0px;
 	background: white;
@@ -652,11 +659,6 @@ input:active, :hover, :focus {
 		padding: 15px;
 	}
 
-	.pla_mess2{
-		display:flex; 
-		align-items: center; 
-		padding: 15px;
-	}
 
 
 	.lsd{
