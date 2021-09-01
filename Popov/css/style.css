@@ -565,10 +565,14 @@ input:active, :hover, :focus {
 
 @media (max-width: 750px) {
 
+	.div_photo{
+		text-align: center;
+	}
+
 	.photo_podbg{
 		position: relative;
-		left: 20%;
-		right: 35%;
+		left: 0%;
+		right: 0%;
 		top: 90px;
 	}
 
