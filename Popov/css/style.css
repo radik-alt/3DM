@@ -401,11 +401,15 @@ input:active, :hover, :focus {
 
 @media (max-width: 320px){
 
+
+	.div_photo{
+
+	}
+
 	.photo_podbg{
 		position: relative;
-		left: 20%;
+		left: 0;
 		right: 0%;
-		top: 80px;
 	}
 
 
@@ -559,9 +563,14 @@ input:active, :hover, :focus {
 }
 
 
-@media (max-width: 576px){
+@media (max-width: 650px) {
 
-
+	.photo_podbg{
+		position: relative;
+		left: 35%;
+		right: 35%;
+		top: 90px;
+	}
 
 	.head {
 		background: url(../img/bg.png);
@@ -704,15 +713,24 @@ input:active, :hover, :focus {
 		margin-top: 25px;
 	}
 
+	.nav-link{
+		text-align: center;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 34px;
+		color: #232323;
+		margin-bottom: 2px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+
 
 
 }
 
-@media (width: 565px){
-	.photo_podbg{
-		position: relative;
-		left: 35%;
-		right: 0%;
-		top: 90px;
-	}
+@media (max-width: 565px){
+	
 }
