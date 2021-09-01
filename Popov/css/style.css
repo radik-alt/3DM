@@ -13,9 +13,7 @@ body{
 
 .photo_podbg{
 	position: relative;
-	left: 40%;
-	right: 40%;
-	top: 60%;
+	top: 190px;
 }
 
 .video_form2{
@@ -405,13 +403,12 @@ input:active, :hover, :focus {
 	border-radius: 5px 5px 0px 0px;
 }
 
+.div_photo{
+	text-align: center;
+}
+
 
 @media (max-width: 320px){
-
-
-	.div_photo{
-
-	}
 
 	.photo_podbg{
 		position: relative;
