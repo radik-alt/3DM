@@ -567,7 +567,7 @@ input:active, :hover, :focus {
 
 	.photo_podbg{
 		position: relative;
-		left: 35%;
+		left: 20%;
 		right: 35%;
 		top: 90px;
 	}
