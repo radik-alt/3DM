@@ -253,6 +253,14 @@ body{
     color: #ffffff;
 }
 
+.style_strel{
+	background-color: #ff6400;
+    border-color:#ff6400;
+     border: 1px solid #ff6400; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+}
+
 .marg_karr p{
 
 	font-style: normal;
