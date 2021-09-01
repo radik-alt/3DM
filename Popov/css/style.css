@@ -563,7 +563,7 @@ input:active, :hover, :focus {
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 
 	.photo_podbg{
 		position: relative;
