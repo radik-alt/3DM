@@ -175,6 +175,19 @@ body{
 	padding-left: 15px;
 }
 
+.online{
+	position: relative; 
+	right: 36px; 
+	top: 5px;
+}
+
+.text_online{
+	position: relative; 
+	right: 30px; 
+	font-size: 16px; 
+	color: #aaaaaa;
+}
+
 .inputs textarea{
 	margin-top: 10px;
 	border: 1px solid #C2C2C2;
@@ -221,8 +234,21 @@ body{
 	color: #232323;;
 }
 
+.Name_player{
+	font-weight: bold; 
+	font-size: 18px;
+}
+
 .img_docssdds{
 	width: 70%;
+}
+
+
+.onvetfor{
+	position: relative; 
+	right: 30px; 
+	font-size: 16px; 
+	color: #aaaaaa;
 }
 
 .input_f{
@@ -825,6 +851,11 @@ input:active, :hover, :focus {
 		width: 40px;
 	}
 
+	.player_glavn{
+		display: flex;
+		align-items: flex-start;
+	}
+
 	.input_f{
 		margin-left: 20px;
 		margin-top: 10px;
@@ -877,6 +908,21 @@ input:active, :hover, :focus {
 	.lol_mes{
 		display: none;
 		border-right: 2px solid #C2C2C2;
+	}
+
+	.online{
+		position: inherit; 
+	}
+
+	.text_online{
+		margin-left: 5px;
+		position: inherit; 
+		color: #aaaaaa;
+	}
+
+	.onvetfor{
+		position: inherit; 
+		color: #aaaaaa;
 	}
 
 
