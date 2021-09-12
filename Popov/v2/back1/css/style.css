@@ -221,10 +221,6 @@ body{
 	color: #232323;;
 }
 
-.img_docssdds{
-	width: 70%;
-}
-
 .input_f{
 	margin-left: 20px;
 	margin-top: 10px;
@@ -630,10 +626,8 @@ input:active, :hover, :focus {
 	}
 
 	.mess_window{
-		margin-top: 0px; 
-		margin-bottom: 0px;
-		padding-top: 25px;
-		padding-bottom: 25px; 
+		margin-top: 100px; 
+		margin-bottom: 25px; 
 		padding: 5px;
 	}
 
@@ -696,11 +690,6 @@ input:active, :hover, :focus {
 		left: 0%;
 		right: 0%;
 		top: 90px;
-	}
-
-	.marg_messf{
-		margin-top: 20px;
-		margin-bottom: 20px;
 	}
 
 	.head {
@@ -790,7 +779,11 @@ input:active, :hover, :focus {
 		margin-left: 15px;
 	}
 
-
+	.mess_window{
+		margin-top: 100px; 
+		margin-bottom: 25px; 
+		padding: 5px;
+	}
 
 	.nununu{
 		padding-top: 10px;
@@ -818,10 +811,6 @@ input:active, :hover, :focus {
 
 	.soc_set img{
 		margin-right: 5px;
-	}
-
-	.img_docssdds{
-		width: 40px;
 	}
 
 	.input_f{
@@ -852,19 +841,18 @@ input:active, :hover, :focus {
 		margin-right: 4px;
 	}
 
-
+	.mess_window{
+		padding-bottom: 25px; 
+		padding: 10px;
+		padding-top: 0px; 
+	}
 
 	.mes_dox{
 		border: 1px solid #C2C2C2;
-		padding: 10px;
+		padding: 15px;
 		border-radius: 5px;
 		background: white;
-		width: 100%;
-	}
-
-	.doc_flez{
-		display: flex;
-		align-items: center;
+		width: 100px;
 	}
 
 	.up_ddd{
