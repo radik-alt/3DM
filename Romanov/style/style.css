@@ -5,7 +5,7 @@
 } */
 
 @font-face {
-    font-family: Nfont;
+    font-family: 'Mak';
     /* Браузер сначала попробует найти шрифт локально */
     src: url("../fonts/MAK.otf") format("otf"),
          /* Если браузер не поддерживает woff2, загрузит woff */
