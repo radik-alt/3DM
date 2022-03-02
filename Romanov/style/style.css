@@ -508,7 +508,7 @@ a {
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
 
     /* *{
         border: 1px solid black;
@@ -704,7 +704,7 @@ a {
     .colorCircule{
         position: relative ;    
         bottom: 70%;
-        left: 6%;
+        left: 5%;
     }
 
     /* footer */
@@ -739,12 +739,12 @@ a {
 }
 
 @media (max-width: 400px){
-
+    
 
     .divBackItemFirst{
         z-index: 0;
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 0%;
     }
 
@@ -752,10 +752,10 @@ a {
         z-index: 0;
         background: #0037F9;
         filter: blur(66px);
-        width: 250px;
-        height: 250px;
+        width: 170px;
+        height: 170px;
     }
-    
 
 
 }
+
