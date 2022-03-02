@@ -9,7 +9,10 @@
     /* Браузер сначала попробует найти шрифт локально */
     src: url("../fonts/MAK.otf") format("otf"),
          /* Если браузер не поддерживает woff2, загрузит woff */
-         url("../fonts/MAK-bold.otf") format("otf");
+         url("../fonts/MAK-bold.otf") format("otf"),
+         url("../fonts/MAK.woff") format("woff"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("../fonts/MAK-bold.woff") format("woff");
   }
   
 .headBlock{
@@ -44,6 +47,7 @@ a {
 }
 
 .btnClick {
+    background-color: #f5f5f5;
     border-radius: 20px;
     border: 1px solid #3853b4;
     box-sizing: border-box;
