@@ -115,16 +115,16 @@ a {
 .divBackItemFirst{
     z-index: 0;
     position: absolute;
-    top: 90%;
-    left: 52%;
+    top: 80%;
+    left: 50%;
 }
 
 .backItemFirst{
     z-index: 0;
     background: #0037F9;
-    filter: blur(58px);
-    width: 200px;
-    height: 200px;
+    filter: blur(86px);
+    width: 300px;
+    height: 300px;
 }
 
 /* image */
@@ -144,7 +144,7 @@ a {
 }
 
 .imageBlock{
-    z-index: 100;
+    z-index: 0;
     text-align: center;
 }
 
@@ -357,6 +357,7 @@ a {
 .containerJob {
     display: flex;
     align-items: center;
+    justify-content: center ;
     border: 1px solid #000000;
     box-sizing: border-box;
     margin-top: 15px;
@@ -436,6 +437,11 @@ a {
     border-radius: 54px;
 }
 
+.colorCircule{
+    position: relative ;    
+    bottom: 37%;
+    right: 3%;
+}
 
 .btnSend{
     height: 45px;
@@ -502,7 +508,7 @@ a {
 }
 
 
-@media (max-width: 420px){
+@media (max-width: 600px){
 
     /* *{
         border: 1px solid black;
@@ -546,8 +552,20 @@ a {
     .divBackItemFirst{
         z-index: 0;
         position: absolute;
-        top: 20%;
+        top: 55%;
         left: 0%;
+    }
+    
+    .backItemFirst{
+        z-index: 0;
+        background: #0037F9;
+        filter: blur(86px);
+        width: 250px;
+        height: 250px;
+    }
+
+    .fronteBlock{
+        z-index: 1;
     }
 
     .downMobileBlock{
@@ -560,7 +578,6 @@ a {
     }
 
     .allImage {
-        z-index: 100;
         width: 100%;
         height: auto;
     }
@@ -580,7 +597,8 @@ a {
     }
 
     .headBlock{
-        font-size: 36px;
+        font-size: 40px;
+        line-height: 40px;
         text-align: center;
     }
 
@@ -671,20 +689,32 @@ a {
     
     .formHead{
         text-align: center;
-        font-size: 36px;
+        font-size: 40px;
+        font-weight: bold;
     }
 
     .eightSection{
+        margin-top: 50px;
         padding-bottom: 50px;
         border: 1px solid #0037F9;
         border-top-right-radius: 150px;
         background-color: white;
     }
 
+    .colorCircule{
+        position: relative ;    
+        bottom: 70%;
+        left: 6%;
+    }
+
     /* footer */
 
     .footer{
         margin-top: 50px;    
+    }
+
+    .number{
+        margin-right: 0px;
     }
 
     .topFooter{
@@ -697,13 +727,6 @@ a {
         display: block;
     }
 
-    .numberItem{
-        text-align: center;
-        position: none;
-        bottom: 0px;
-        left: 0px;
-    }
-
     .email{
         text-align: center  ;
         margin-left: 0px;
@@ -712,5 +735,13 @@ a {
     .divMiddle{
         text-align: center;
     }
+
+}
+
+@media (max-width: 600px){
+
+
+
+
 
 }

@@ -25,16 +25,16 @@
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav w-100 justify-content-center">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Обо мне</a>
+                    <a class="nav-link" href="#aboutMeAnchor">Обо мне</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Портфолио</a>
+                    <a class="nav-link" href="#portfolio">Портфолио</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Отзывы</a>
+                    <a class="nav-link" href="#feedback">Отзывы</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
+                    <a class="nav-link" href="#contacts">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -55,11 +55,11 @@
                         </div>
                     </div>
                     <div class="divDescriptionButon">
-                        <button class="btnClick">Оставить отзыв</button>
+                        <a href="#forms"><button class="btnClick">Оставить отзыв</button></a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 UpMobileBlock">
-                    <div class="imageBlock">
+                    <div class="imageBlock" style="position: relative; z-index: 99;">
                         <img src="picture/photoHead.svg" class="allImage" alt=""/>
                         
                     </div>
@@ -74,7 +74,7 @@
 
     </section>
 
-    <section class="twoPage margSection">
+    <section class="twoPage margSection" id="aboutMeAnchor">
         
         <div>
             <div class="row">
@@ -166,7 +166,7 @@
 
     </section>
 
-    <section class="fourSection margSection">
+    <section class="fourSection margSection" id="portfolio">
 
         <div class="headFour">
             <h2 class="headBlock">Портфолио</h2>
@@ -215,7 +215,7 @@
 
     </section>
 
-    <section class="fiveSection margSection">
+    <section class="fiveSection margSection" id="feedback">
 
         <div>
             <h2 class="headBlock">Отзывы</h2>
@@ -364,13 +364,17 @@
         </div>
     </section>
 
-    <section class="eightSection margSection">
+    <section class="eightSection margSection" id="forms">
 
         <form>
             <div class="row">
                 <div class="col-12 col-lg-7">
-                    <div class="colorCircule"></div>
-                    <h2 class="formHead">Заказать перевод </h2>
+                    <div style="position: relative; z-index: 99;">
+                        <h2 class="formHead" style="z-index: 99;">Заказать перевод </h2>
+                    </div>
+                    <div class="colorCircule" style="z-index: 0;">
+                        <div class="backItem" style="z-index: 0;"></div>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-5 formInputs">
 
@@ -389,7 +393,7 @@
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <hr>
         <div class="divFooter">
             <div class="topFooter">
@@ -397,16 +401,16 @@
             </div>
             <div class="middleFooter">
                 <div class="divMiddle">
-                    <p class="number"><a href="number">+79021235145</a></p>
+                    <p class="number"><a href="tel:+79021235145">+79021235145</a></p>
                 </div>
                 <div class="divMiddle">
-                    <p class="email"><a href="">filon.romanov@gmail.com</a></p>
+                    <p class="email"><a href="#">filon.romanov@gmail.com</a></p>
                 </div>
             </div>
             <div class="downFooter">
-                <a href="#"><img src="picture/Internet.svg" class="socImage" alt=""/></a>
-                <a href="#"><img src="picture/whatsapp.svg" class="socImage" alt=""/></a>
-                <a href="#"><img src="picture/VK.svg" class="socImage" alt=""/></a>
+                <a href="https://telegram.me/Filonromanov"><img src="picture/Internet.svg" class="socImage" alt=""/></a>
+                <a href="https://api.whatsapp.com/send/?phone=79021235145"><img src="picture/whatsapp.svg" class="socImage" alt=""/></a>
+                <a href="https://vk.com/realfilon"><img src="picture/VK.svg" class="socImage" alt=""/></a>
             </div>
 
         </div>
