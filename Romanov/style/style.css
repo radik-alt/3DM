@@ -1,5 +1,4 @@
 /* общие */
-/* @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chonburi&display=swap'); */
 /* *{
     border: 1px solid black;
 } */
@@ -48,7 +47,6 @@ a {
 
 .btnClick {
     background-color: #f5f5f5;
-    border-radius: 20px;
     border: 1px solid #3853b4;
     box-sizing: border-box;
     font-size: 18px;
@@ -105,9 +103,10 @@ a {
 }
 
 .downHead {
+    font-family: "Bellota Text";
     font-weight: 300;
     font-size: 18px;
-    line-height: 38px;
+    line-height: 20px;
     color: #000000;
     font-style: normal;
 }
@@ -140,7 +139,7 @@ a {
 }
 
 .divDescriptionButon{
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .imageBlock{
@@ -171,7 +170,10 @@ a {
 }
 
 .textAboutMe{
+    font-family: "Bellota Text";
+    font-size: 18px;
     margin-top: 35px;
+    color: #000000;
 }
 
 .containerItem{
@@ -311,22 +313,33 @@ a {
 
 .seconNext{
     position: relative;
-    top: 0px;
+    top: -5px;
     left: 90%;
 }
 
 /* 5 секция*/
 .divReviews{
-    padding: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     border: 1px solid #000000;
     box-sizing: border-box;
 }
 
+.otzyv{
+    font-size: 20px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.DivImageOtzyv{
+    text-align: center;
+}
 
 .ImageOtzyv{
-    width: 80px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
 }
 
 .indicatorOtzyv{
@@ -334,14 +347,24 @@ a {
 }
 
 .DivtextOtzyv{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-/* .nextOtzyv{
-    position: relative;
-    right: 100px;
-} */
+.nextOtzyv{
+    margin-bottom: 50px;
+    position: absolute;
+    left: 10%;
+}
 
+.backOtzyv{
+    margin-bottom: 50px;
+    position: absolute;
+    right: 10%;
+}
+
+.margOtzyv{
+    margin-top: 50px;
+}
 
 .indicators{
     position: relative;
@@ -352,6 +375,18 @@ a {
 
 .headWithJob{
     font-size: 32px;
+}
+
+.colorJobWithLeft{
+    position: absolute;
+    margin-bottom: 140px;
+    left: 13%;
+}
+
+.colorJobWithRight{
+    position: absolute;
+    margin-bottom: 140px;
+    right: 39%;
 }
 
 .containerJob {
@@ -387,7 +422,9 @@ a {
 }
 
 .accordion-button:hover,
-.accordion-button:checked
+.accordion-button:checked,
+.accordion-button:active,
+.accordion-button:focus
 {
     font-family: 'Bellota Text';
     font-style: normal;
@@ -395,8 +432,7 @@ a {
     font-size: 22px;
     margin-top: 20px;
     color: #000000;
-    background-color: #f5f5f5;  
-    border-bottom:none;
+    background-color: #f5f5f5; 
 }
 
 .accordion-body{
@@ -407,16 +443,17 @@ a {
 
 /* 8 секция */
 .eightSection{
-    border: 1px solid #0037F9;
+    border-top: 1px solid #0037F9;
+    border-bottom: 1px solid #0037F9;
     border-top-right-radius: 150px;
     background-color: white;
 }
 
 .formHead{
     font-family: 'Bellota Text';
-    font-style: normal;
+    font-style:normal;
     font-weight: bold;
-    font-size: 54px;
+    font-size: 58px;
 }
 
 .formInputs{
@@ -430,7 +467,7 @@ a {
     outline: none;
     height: 50px;
     padding-left: 20px;
-    width: 80%;
+    width: 90%;
     background: #FFFFFF;
     border: 1px solid #0037F9;
     box-sizing: border-box;
@@ -508,11 +545,300 @@ a {
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 600px){
 
     /* *{
         border: 1px solid black;
     } */
+
+    /* 1 cекция */
+    
+    .headFirstName {
+        font-family: 'Mak';
+        font-size: 60px;
+        color: #000000;
+    }
+
+    .headLastName{
+        position: relative;
+        left: 10%;
+        font-family: 'Mak';
+        font-size: 60px;
+        line-height: 70px;
+        margin-left: 0px;
+        color: #000000;
+    }
+
+    
+    .margSectionUpper{
+        padding: 20px;
+        padding-top: 20px;
+    }
+
+    .divDescription{
+        font-family: 'Mak';
+        text-align: center;
+    }
+
+    .divDescriptionButon{
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .divBackItemFirst{
+        z-index: 0;
+        position: absolute;
+        top: 55%;
+        left: 0%;
+    }
+    
+    .backItemFirst{
+        z-index: 0;
+        background: #0037F9;
+        filter: blur(86px);
+        width: 250px;
+        height: 250px;
+    }
+
+    .fronteBlock{
+        z-index: 1;
+    }
+
+    .downMobileBlock{
+        margin-top: 50px;
+        order: 1;
+    }
+
+    .UpMobileBlock{
+        order: 0;
+    }
+
+    .allImage {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* 2 секция */
+
+    .aboutMe{
+        margin-top: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .margSection{
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .headBlock{
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .ImageTwo{
+        width: 100%;
+    }
+
+    .divLine{
+        border: 2px solid #0037F9;
+        order: 1;
+    }
+
+    .divTwoDownText{
+        order: 0;
+    }
+    
+    .containerDownTezis{
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .textAboutMe{
+        text-align: center;
+    }
+    
+    .containerItem{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* 3 секция */
+
+    .container {
+        border: 1px solid #0037F9;
+        box-sizing: border-box;
+        padding: 25px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 180px;
+    }
+
+    .divBackItem{
+        position: absolute;
+        left: 42%;
+    }
+
+    .divBackItem2{
+        position: absolute;
+        left: 42%;
+    }
+
+    .divBackItem3{
+        position: absolute;
+        left: 42%;
+    }
+
+
+    /* 4 секция */
+
+    .divReviews{
+        padding: 25px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+    }
+
+    .otzyv{
+        text-align: center;
+        line-height: 28px;
+    }
+
+    /* 5 секция */
+
+    .nextOtzyv{
+        margin-top: 0px;
+        position: absolute;
+        left: 0%;
+        top: 80%;
+    }
+    
+    .backOtzyv{
+        margin-top: 0px;
+        position: absolute;
+        left: 90%;
+        top: 80%;
+    }
+
+    
+    
+    .indicatorOtzyv{
+        margin-top: 80px;
+    }
+
+    /* 6 секция */
+
+    .containerJob {
+        justify-content: center ;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /* 7 секция */
+ 
+    .formInputs{
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .formHead{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .eightSection{
+        margin-top: 50px;
+        padding-bottom: 50px;
+        border-top: 1px solid #0037F9;
+        border-bottom: 1px solid #0037F9;   
+        border-top-right-radius: 150px;
+        background-color: white;
+    }
+
+    .colorCircule{
+        position: relative ;    
+        bottom: 70%;
+        left: 25%;
+    }
+
+    /* footer */
+
+    .footer{
+        margin-top: 50px;    
+    }
+
+    .number{
+        margin-right: 0px;
+    }
+
+    .topFooter{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .middleFooter{
+        display: block;
+    }
+
+    .email{
+        text-align: center  ;
+        margin-left: 0px;
+    }
+
+    .divMiddle{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 400px){
+
+
+    .divBackItemFirst{
+        z-index: 0;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+
+    .backItemFirst{
+        z-index: 0;
+        background: #0037F9;
+        filter: blur(66px);
+        width: 170px;
+        height: 170px;
+    }
+    
+    .colorCircule{
+        position: relative ;    
+        bottom: 70%;
+        left: 0%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .divBackItemFirst{
+        z-index: 0;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+
+    .backItemFirst{
+        z-index: 0;
+        background: #0037F9;
+        filter: blur(66px);
+        width: 170px;
+        height: 170px;
+    }
 
     /* 1 cекция */
     
@@ -680,6 +1006,18 @@ a {
         padding-right: 0px;
     }
 
+    .colorJobWithLeft{
+        position: absolute;
+        margin-bottom: 140px;
+        left: 46%;
+    }
+    
+    .colorJobWithRight{
+        position: absolute;
+        margin-bottom: 140px;
+        left: 46%;
+    }
+
     /* 7 секция */
  
     .formInputs{
@@ -688,6 +1026,7 @@ a {
     }
     
     .formHead{
+        font-family: "Bellota Text";
         text-align: center;
         font-size: 40px;
         font-weight: bold;
@@ -696,7 +1035,8 @@ a {
     .eightSection{
         margin-top: 50px;
         padding-bottom: 50px;
-        border: 1px solid #0037F9;
+        border-top: 1px solid #0037F9;
+        border-bottom: 1px solid #0037F9;
         border-top-right-radius: 150px;
         background-color: white;
     }
@@ -704,7 +1044,7 @@ a {
     .colorCircule{
         position: relative ;    
         bottom: 70%;
-        left: 5%;
+        left: 0%;
     }
 
     /* footer */
@@ -737,25 +1077,3 @@ a {
     }
 
 }
-
-@media (max-width: 400px){
-    
-
-    .divBackItemFirst{
-        z-index: 0;
-        position: absolute;
-        top: 50%;
-        left: 0%;
-    }
-
-    .backItemFirst{
-        z-index: 0;
-        background: #0037F9;
-        filter: blur(66px);
-        width: 170px;
-        height: 170px;
-    }
-
-
-}
-
